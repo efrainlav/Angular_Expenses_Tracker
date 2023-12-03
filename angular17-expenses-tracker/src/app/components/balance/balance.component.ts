@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-balance',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, FormsModule],
   templateUrl: './balance.component.html',
-  styleUrl: './balance.component.scss'
+  styleUrl: './balance.component.scss',
 })
 export class BalanceComponent {
+  @Input() title: string = '';
 
+  // //Variables con tipo implícito
+  // title = 'This is the balance component';
+  // // Variables con tipo explícito
+  // search = 'Iphone 15 Pro Max';
 }
