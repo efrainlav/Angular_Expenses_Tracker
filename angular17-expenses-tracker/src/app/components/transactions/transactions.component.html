@@ -1,0 +1,7 @@
+<h2>Transactions</h2>
+<!-- <p>Hay {{ transactions.length }} transacciones</p> -->
+<ul>
+  @for(transaction of transactions; track transaction.id){
+  <li>{{ transaction.category }} -- {{ transaction.amount | currency }}</li>
+  }
+</ul>
