@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { BalanceComponent } from './components/balance/balance.component';
 import { TransactionsComponent } from './components/transactions/transactions.component';
@@ -15,6 +15,7 @@ import { Transaction } from './models/transaction.model';
   imports: [
     CommonModule,
     RouterOutlet,
+    RouterLink,
     BalanceComponent,
     TransactionsComponent,
     FormsModule,
